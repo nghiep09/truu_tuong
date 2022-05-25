@@ -66,7 +66,7 @@ public class HotelList {
         System.out.println("nhập tên cần tìm: ");
         String tencantim = scanner.nextLine();
         for (int i = 0; i < nguois.size(); i++) {
-            if (nguois.equals(tencantim)) {
+            if (nguois.get(i).getName().equals(tencantim)) {
                 System.out.println(nguois);
                 check = true;
             }
